@@ -1,20 +1,16 @@
-
-import { useState } from 'react';
-
-
-
+import { useState } from "react";
 
 function Header({ title }) {
-  return <h1>{title ? title : "Default title"}</h1>
+  return <h1>{title ? title : "Default title"}</h1>;
 }
 
 function HomePage() {
-  const names = ["Ada Lovelace", "Grace Hopper", "Margaret Hamilton"]
+  const names = ["Ada Lovelace", "Grace Hopper", "Margaret Hamilton"];
 
-  const [likes, setLikes] = useState(0)
+  const [likes, setLikes] = useState(0);
 
   function handleClick() {
-    setLikes(likes + 1)
+    setLikes(likes + 1);
   }
 
   return (
@@ -28,8 +24,5 @@ function HomePage() {
 
       <button onClick={handleClick}>Like ({likes})</button>
     </div>
-  )
+  );
 }
-
-
-
